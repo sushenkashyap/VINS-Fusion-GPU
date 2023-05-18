@@ -1,0 +1,3 @@
+<launch>
+  <node pkg="vins" type="vins_node" name="vins_node" output="screen" args="/home/arclab/vinsgpu_ws/src/VINS-Fusion-gpu/config/f1tenth/vins_f1tenth.yaml"/>
+</launch>

@@ -1,7 +1,7 @@
 # VINS-Fusion-gpu
 This repository is a version of VINS-Fusion with GPU acceleration. It can run on Nvidia TX2 in real-time. 
 ## 1. Prerequisites  
-The essential software environment is same as VINS-Fusion. Besides, it requires OpenCV cuda version.(Only test it on OpenCV 3.4.1).
+The essential software environment is same as VINS-Fusion. Besides, it requires OpenCV cuda version.~~(Only test it on OpenCV 3.4.1)~~. Tested on Ubuntu 20.04LTS, ROS Noetic with OpenCV4.2 and CUDA 11.4.
 ## 2. Usage
 ### 2.1 Change the opencv path in the CMakeLists
 In /vins_estimator/CMakeLists.txt, change Line 20 to your path.  

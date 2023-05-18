@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(loop_fusion)
 
 set(CMAKE_BUILD_TYPE "Release")
-set(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS "-std=c++14")
 #-DEIGEN_USE_MKL_ALL")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g")
 
@@ -15,9 +15,9 @@ find_package(catkin REQUIRED COMPONENTS
     roslib
     )
 
-#find_package(OpenCV)
-include(/home/dji/opencv/build/OpenCVConfig.cmake)
-
+#find_package(OpenCV 4)
+include(/home/arclab/workspace/opencv-4.2.0/build/OpenCVConfig.cmake)
+#set(OpenCV_DIR /home/arclab/workspace/opencv-4.2.0/build)
 
 find_package(Ceres REQUIRED)
 
@@ -44,4 +44,4 @@ add_executable(loop_fusion_node
     src/ThirdParty/VocabularyBinary.cpp
     )
 
-target_link_libraries(loop_fusion_node ${catkin_LIBRARIES}  ${OpenCV_LIBS} ${CERES_LIBRARIES}) 
+target_link_libraries(loop_fusion_node ${catkin_LIBRARIES}  ${OpenCV_LIBS} ${CERES_LIBRARIES})

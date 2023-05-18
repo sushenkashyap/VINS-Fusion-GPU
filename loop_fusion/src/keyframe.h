@@ -14,6 +14,7 @@
 #include <vector>
 #include <eigen3/Eigen/Dense>
 #include <opencv2/opencv.hpp>
+#include <opencv2/core/core.hpp>
 #include <opencv2/core/eigen.hpp>
 #include "camodocal/camera_models/CameraFactory.h"
 #include "camodocal/camera_models/CataCamera.h"

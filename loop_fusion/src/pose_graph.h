@@ -14,6 +14,7 @@
 #include <thread>
 #include <mutex>
 #include <opencv2/opencv.hpp>
+#include <opencv2/core/core.hpp>
 #include <eigen3/Eigen/Dense>
 #include <string>
 #include <ceres/ceres.h>
